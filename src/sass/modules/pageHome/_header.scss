@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+    background-image: url(../images/banner.jpg);
+    background-blend-mode: darken;
+    background-color: rgba(7, 7, 7, 0.619);
+    position: relative;
+
+    nav {
+        position: absolute;
+        top: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        .logo{
+            color: white;
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 20px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    h1{
+        color: white;
+        margin-bottom: 20px;
+    }
+    p{
+        text-transform: uppercase;
+        color: #a3a3a4;
+        font-size: 1.3rem; 
+        margin-bottom: 10px;
+    }
+    button{
+        background-color: #f32853;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10%;
+        margin-top: 30px;
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+@media (max-width:426px) {
+    //  nav ---------------------------------------
+        nav{
+            flex-direction: column;
+            margin-bottom: 30px;
+            .logo{
+                font-size: 28px;
+            }
+            ul{
+                font-size: 14px;
+                li{
+                    a{
+                        text-decoration: underline 1px solid white;
+                    }
+                }
+                
+            }
+        }
+    // end nav ---------------------------------------    
+    // header ---------------------------------------    
+        .prg-hdr{
+            font-size:14px;
+            padding: 5px;
+        }
+    }
+    
+
+
